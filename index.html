@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Integrador 2 | Javascript</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--------------- NAVBAR ------------------->
+    <header>
+      <nav>
+        <div class="nav-logo">
+          <a href="#">
+            <img src="image/Encuentro_logo_transparent.png" />
+          </a>
+        </div>
+
+        <ul class="nav-links">
+          <li class="link"><a href="#">Inicio</a></li>
+          <li class="link"><a href="#">Productos</a></li>
+          <li class="link"><a href="#">Sobre nosotros</a></li>
+          <li class="link"><a href="#">Contacto</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="btn">Reserva</button>
+          <a href="#" class="carrito" id="carrito"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+        </div>
+      </nav>
+    </header>
+    <!--------------- HERO ------------------->
+    <section class="container-hero">
+      <div class="content">
+        <h1>Tu lugar de <span>encuentro</span> con el sabor</h1>
+        <p>
+          Café de especialidad, pastelería casera y un ambiente pensado para que
+          te sientas como en casa. ¡Bienvenido!
+        </p>
+        <button class="btn">Ver Carta</button>
+      </div>
+    </section>
+    <!--------------- ABOUT-US ------------------->
+    <section class="container-aboutUs">
+      <h2>Sobre nosotros</h2>
+      <div class="content-aboutUs">
+        <p>
+          En nuestra cafetería, el café es mucho más que una bebida: es una
+          experiencia. Nos apasiona trabajar con granos de origen único,
+          seleccionados cuidadosamente de fincas que cultivan con respeto por la
+          tierra y las personas. Cada taza que servimos es el resultado de un
+          proceso meticuloso, desde el tostado artesanal hasta la preparación
+          precisa, todo pensado para resaltar los matices únicos de cada café.
+          Creemos en crear un espacio cálido donde la comunidad se reúna a
+          disfrutar, aprender y compartir su amor por el buen café.
+        </p>
+        <img class="image-aboutUs" src="image/fondo-coffe.jpg" />
+      </div>
+    </section>
+    <!--------------- MENU ------------------->
+    <section class="Carta">
+      <h2>Menu</h2>
+      <div class="product">
+        <img src="image/budines.jpg" />
+        <h4>Budines</h4>
+        <p>Naranja, limon, banana, chocolate</p>
+        <p><b>Precio:</b> $1500</p>
+        <button class="btn">Agregar</button>
+      </div>
+    </section>
+    <!--------------- CONTACTO ------------------->
+    <section class="contacto">
+      <h2>Contactanos</h2>
+      <div class="container-contact">
+        <form class="form" id="form-reserva">
+          <h4>registrate para resevar</h4>
+          <input type="text" id="username" placeholder="nombre completo" />
+          <input type="email" id="email" placeholder="email" />
+          <input type="password" id="password" placeholder="contraseña" />
+          <input type="number" id="telefono" placeholder="telefono" />
+          <button type="submit" class="btn">registrarse</button>
+          <div class="form-footer">
+            <p>¿Ya tienes cuenta? <a href="#">Inicia sesión</a></p>
+          </div>
+        </form>
+        <div class="maps">
+          <h4>Donde encontrarnos</h4>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.9286697422795!2d-64.19046702511795!3d-31.41609129623571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a283cc9936e1%3A0x76cb11a3cc069672!2s27%20de%20Abril%20299-199%2C%20X5000AEE%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1756601761841!5m2!1ses-419!2sar"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
+    <!--------------------- FOOTER -------------------->
+    <footer></footer>
+  </body>
+</html>
