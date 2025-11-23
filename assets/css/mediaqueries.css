@@ -1,0 +1,170 @@
+@media (max-width: 1290px) {
+  /* --- Global --- */
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+
+  section .content p {
+    font-size: 24px;
+  }
+
+  .container-aboutUs h2 {
+    margin: 1rem 3rem 4rem 3rem;
+  }
+
+  .container-contact {
+    gap: 2rem;
+  }
+
+  .product {
+    grid-template-columns: 1fr 1fr;
+    padding: 0.25rem 2rem 5rem 2rem;
+  }
+  .Carta img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .nav-links {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 70px;
+    align-items: start;
+    padding: 1rem 10rem 3rem 1rem;
+    border-radius: 0 0 30px 30px;
+    border: solid 2px #4b2503;
+    border-top: 0;
+    box-shadow: 0 0 0 100vmax rgba(73, 53, 34, 0.5);
+    background-color: rgb(252, 241, 228);
+  }
+  .container-carrito {
+    width: 30%;
+    height: 100vh;
+    top: 70px;
+  }
+
+  .active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .content-aboutUs {
+    gap: 2rem;
+    margin: 1.5rem 1rem;
+  }
+
+  .content-aboutUs p {
+    font-size: 20px;
+  }
+  .image-aboutUs {
+    width: 45%;
+  }
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 50px;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+  }
+  .nav-logo {
+    max-width: 50px;
+  }
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .container-carrito {
+    width: 40%;
+    height: 100vh;
+    top: 70px;
+  }
+
+  section .content p {
+    font-size: 20px;
+    padding: 1rem;
+  }
+
+  .container-aboutUs h2 {
+    margin: 1rem 1rem 3rem 1rem;
+  }
+  .content-aboutUs {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    margin: 2rem 1rem;
+  }
+  .content-aboutUs p {
+    width: 100%;
+  }
+  .image-aboutUs {
+    width: 100%;
+  }
+
+  .product {
+    grid-template-columns: 1fr;
+    padding: 0.25rem 1rem 5rem 1rem;
+  }
+  .Carta img {
+    width: 90%;
+  }
+
+  .container-contact {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 30px 10px;
+  }
+  .maps,
+  .form {
+    max-width: 95%;
+    padding: 1rem;
+  }
+
+  .container-footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 20px 0;
+  }
+}
+@media (max-width: 480px) {
+  .btn-mobile-nav {
+    display: block;
+  }
+  nav {
+    padding: 0 0.5rem;
+  }
+
+  h4 {
+    font-size: 30px;
+  }
+
+  .container-carrito h2 {
+    padding: 1rem 0 2rem 0;
+  }
+  .container-carrito li {
+    font-size: 18px;
+    flex-direction: column;
+  }
+  .container-carrito img {
+    width: 50%;
+  }
+}

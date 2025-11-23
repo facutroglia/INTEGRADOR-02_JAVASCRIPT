@@ -8,7 +8,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/mediaqueries.css" />
   </head>
   <body>
     <!--------------- NAVBAR ------------------->
@@ -16,38 +17,41 @@
       <nav>
         <div class="nav-logo">
           <a href="#">
-            <img src="image/Encuentro_logo_transparent.png" />
+            <img src="./assets/image/Encuentro_logo_transparent.png" />
           </a>
         </div>
 
-        <ul class="nav-links">
-          <li class="link"><a href="#">Inicio</a></li>
-          <li class="link"><a href="#">Productos</a></li>
-          <li class="link"><a href="#">Sobre nosotros</a></li>
-          <li class="link"><a href="#">Contacto</a></li>
+        <ul class="nav-links" id="nav">
+          <li class="link"><a href="#Inicio">Inicio</a></li>
+          <li class="link"><a href="#Menu">Productos</a></li>
+          <li class="link"><a href="#Sobre-Nosotros">Sobre nosotros</a></li>
+          <li class="link"><a href="#Contacto">Contacto</a></li>
         </ul>
 
+        <button class="btn-mobile-nav" id="btn-mobile-nav">
+          <i class="fa-solid fa-bars"></i>
+        </button>
         <div class="nav-actions">
-          <button class="btn">Reserva</button>
-          <a href="#" class="carrito" id="carrito"
-            ><i class="fa-solid fa-cart-shopping"></i
-          ></a>
+          <a href="#Contacto" class="btn">Reserva</a>
+          <button class="btn-cart" id="btn-cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
         </div>
       </nav>
     </header>
     <!--------------- HERO ------------------->
-    <section class="container-hero">
+    <section class="container-hero" id="Inicio">
       <div class="content">
         <h1>Tu lugar de <span>encuentro</span> con el sabor</h1>
         <p>
           Café de especialidad, pastelería casera y un ambiente pensado para que
           te sientas como en casa. ¡Bienvenido!
         </p>
-        <button class="btn">Ver Carta</button>
+        <a href="#Menu" class="btn">Ver Carta</a>
       </div>
     </section>
     <!--------------- ABOUT-US ------------------->
-    <section class="container-aboutUs">
+    <section class="container-aboutUs" id="Sobre-Nosotros">
       <h2>Sobre nosotros</h2>
       <div class="content-aboutUs">
         <p>
@@ -60,37 +64,64 @@
           Creemos en crear un espacio cálido donde la comunidad se reúna a
           disfrutar, aprender y compartir su amor por el buen café.
         </p>
-        <img class="image-aboutUs" src="image/fondo-coffe.jpg" />
+        <img class="image-aboutUs" src="./assets/image/fondo-coffe.jpg" />
       </div>
     </section>
     <!--------------- MENU ------------------->
-    <section class="Carta">
+    <section class="Carta" id="Menu">
       <h2>Menu</h2>
-      <div class="product">
-        <img src="image/budines.jpg" />
+       <ul id="categorias">
+         <li id="todos" >Todos los productos</li>
+         <li id="infusiones">Infunsiones</li>
+         <li id="panaderia">Panaderia</li>
+       </ul> 
+      <ul class="product" id="productos"></ul>
+      <!--<div class="product">
+        <img src="./assets/image/budines.jpg" />
         <h4>Budines</h4>
         <p>Naranja, limon, banana, chocolate</p>
         <p><b>Precio:</b> $1500</p>
         <button class="btn">Agregar</button>
-      </div>
+      </div>-->
+    </section>
+    <section id="carrito" class="container-carrito">
+      <h2>Tus productos</h2>
+      <ul id="lista"></ul>
+      <p><span id="total"></span></p>
     </section>
     <!--------------- CONTACTO ------------------->
-    <section class="contacto">
+    <section class="contacto" id="Contacto">
       <h2>Contactanos</h2>
       <div class="container-contact">
         <form class="form" id="form-reserva">
           <h4>registrate para resevar</h4>
-          <input type="text" id="username" placeholder="nombre completo" />
-          <input type="email" id="email" placeholder="email" />
-          <input type="password" id="password" placeholder="contraseña" />
-          <input type="number" id="telefono" placeholder="telefono" />
-          <button type="submit" class="btn">registrarse</button>
+          <fieldset>
+            <input type="text" id="Name" placeholder="Nombre " />
+            <span></span>
+          </fieldset>
+          <fieldset>
+            <input type="text" id="LastName" placeholder="Apellido " />
+            <span></span>
+          </fieldset>
+          <fieldset>
+            <input type="email" id="Email" placeholder="Email" />
+            <span></span>
+          </fieldset>
+          <fieldset>
+            <input type="password" id="Password" placeholder="Contraseña" />
+            <span></span>
+          </fieldset>
+          <fieldset>
+            <input type="number" id="Telefono" placeholder="Telefono" />
+            <span></span>
+          </fieldset>
+          <input type="submit" class="btn" id="btn-register"  value="Registrarse"></input>
           <div class="form-footer">
             <p>¿Ya tienes cuenta? <a href="#">Inicia sesión</a></p>
           </div>
         </form>
         <div class="maps">
-          <h4>Donde encontrarnos</h4>
+          <h4><i class="fa-solid fa-location-dot"></i> Donde encontrarnos</h4>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.9286697422795!2d-64.19046702511795!3d-31.41609129623571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a283cc9936e1%3A0x76cb11a3cc069672!2s27%20de%20Abril%20299-199%2C%20X5000AEE%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1756601761841!5m2!1ses-419!2sar"
             width="600"
@@ -105,6 +136,42 @@
       </div>
     </section>
     <!--------------------- FOOTER -------------------->
-    <footer></footer>
+    <footer>
+      <section class="container-footer">
+        <div class="redes">
+          <img class="img-footer" src="./assets/image/img-footer.jpg" alt="" />
+
+          <a class="redes-footer" href=""
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a class="redes-footer" href=""
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+          <a class="redes-footer" href=""
+            ><i class="fa-brands fa-google"></i
+          ></a>
+        </div>
+
+        <div class="footer-divs">
+          <h4>Mas informacion</h4>
+          <ul>
+            <li><a href="">Trabaja con Nosotros</a></li>
+            <li><a href="">Terminos y Condiciones</a></li>
+            <li><a href="">Acerca de Nosotros</a></li>
+          </ul>
+        </div>
+        <div class="footer-divs">
+          <h4>Horarios</h4>
+          <ul>
+            <li>Lunes - Viernes: 07:00 am - 08:00 pm</li>
+            <li>Sabado: 08:00 am - 13:00 pm</li>
+            <li>Domingo: Cerrado</li>
+          </ul>
+        </div>
+      </section>
+      <p>© 2025 -Copyright © FacundoTroglia</p>
+    </footer>
+    <script src="./assets/javascript/main.js" type="module"></script>
+    <script src="main.js"></script>
   </body>
 </html>
