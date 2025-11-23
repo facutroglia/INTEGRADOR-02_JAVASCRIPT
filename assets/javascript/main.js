@@ -97,7 +97,7 @@ const MostrarProductos = (productToShow) => {
       `<dl><dt>${producto.nombre}</dt><img src="${producto.imagen}"><img><dd>${producto.descripcion}</dd><dd>$ ${producto.precio}</dd></dl>`,
       { id: producto.id }
     );
-    const formProduct = crearElemento("form", `<button>agregar</button>`);
+    const formProduct = crearElemento("form", `<button>Agregar</button>`);
     formProduct.addEventListener("submit", agregarProducto);
     cardProduct.appendChild(formProduct);
     productos.appendChild(cardProduct);
